@@ -28,7 +28,7 @@ int main(void)
     int floodgate = 0;
 
     //Creating pointer to title, with a memory of 4 bytes
-    char* title = malloc(4);
+    char* title = malloc((sizeof(int)*3 + sizeof(char)*3));
 
     //Open new file, titled 000.jpg, for writing only
     FILE* img = fopen("000.jpg", "a");
